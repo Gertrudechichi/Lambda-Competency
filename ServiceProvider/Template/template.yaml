@@ -1,0 +1,22 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+
+Resources:
+  MyLambdaFunction:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      FunctionName: !Sub "lambda_function"
+      Runtime: python3.9
+      Handler: lambda.lambda_handler
+      CodeUri:
+        Bucket: xxxxxxxxxxxxx #replace this with your bucketname
+        Key: lambda.zip
+      Role: arn:aws:iam::xxxxxxxxxxxx:role/lambdarole #replace this with the actual account ID for the arn
+      Tags:
+        Name: "lambda_function"
+      Events:
+        Schedule:
+          Type: Schedule
+          Properties:
+            Schedule: "cron(0 * * * ? *)"
+            Enabled: true
