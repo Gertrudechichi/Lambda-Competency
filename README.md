@@ -21,7 +21,7 @@ Architecture
 
 Implementation
 
-- AWS Serverless Application Model (SAM): Used to define infrastructure components in a template.yml file.
+- AWS Serverless Application Model (SAM): Used to define infrastructure components in a template.yaml file.
 - Streamlined Deployment: SAM minimizes errors during deployment.
 
 Benefits
