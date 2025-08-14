@@ -1,5 +1,37 @@
-The objective of this project is to optimize the cost of EC2 instance in the production environment by automating the start and stop of EC2 instance to enable it to run only when needed (during working hours,8am-10pm).This solution is ideal for predictable document processing workloads such as documents that require processing during regular business hours such as generating invoices for customers or processing payment transactions , generating contract documents, sending notification to stakeholders and last but not the least, automating the generation of daily reports or websites.
-This project is a cross-account AWS architecture where the serverless service provider’s account hosts a lambda function that automatically starts or stops an EC2 instance in the client account on a scheduled basis. 
-Workflow
-The Lambda function, stored in an S3 bucket in the Serverless Service Provider's account, is triggered by Amazon EventBridge on a cron schedule. To manage EC2 instances in the client's account, the Lambda function assumes an IAM role using Security Token Service (STS), gaining temporary permissions to control the instances, enabling secure, automated cross-account management.
-The architecture was implemented using AWS Serverless Application Model where a template.yml file was used to define the components of the infrastructure thereby , streamlining  the lambda deployment process by minimizing  errors during deployment. 
+EC2 Instance Cost Optimization Project
+
+Overview
+
+This project aims to optimize the cost of EC2 instances in production environments by automating their start and stop times. By leveraging a serverless architecture, EC2 instances will only run during working hours (8am-10pm), reducing unnecessary costs.
+
+Use Cases
+
+- Document processing workloads with predictable schedules
+- Generating invoices for customers
+- Processing payment transactions
+- Creating contract documents
+- Sending notifications to stakeholders
+- Automating daily reports or website updates
+
+Architecture
+
+- Cross-Account AWS Architecture: A Lambda function in the serverless service provider's account controls EC2 instances in the client account.
+- Scheduled Automation: Amazon EventBridge triggers the Lambda function on a cron schedule.
+- Secure Cross-Account Management: The Lambda function assumes an IAM role using STS to gain temporary permissions.
+
+Implementation
+
+- AWS Serverless Application Model (SAM): Used to define infrastructure components in a template.yml file.
+- Streamlined Deployment: SAM minimizes errors during deployment.
+
+Benefits
+
+- Cost Optimization: Reduce EC2 instance costs by automating start and stop times.
+- Increased Efficiency: Automate document processing workloads during regular business hours.
+- Secure and Scalable: Leverage AWS services for secure and scalable architecture.
+
+Get Started
+
+- Watch the accompanying YouTube video for a step-by-step guide on deploying this solution: [link to YouTube video]
+- Follow the instructions in the video to set up the project in your AWS account.
+- Clone this repository to explore the project code and architecture.
