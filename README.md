@@ -32,7 +32,7 @@ Benefits
 
 Get Started
 
-- Watch the accompanying YouTube video for a step-by-step guide on deploying this solution: [link to YouTube video]
+- Watch the accompanying YouTube video for a step-by-step guide on deploying this solution: https://www.youtube.com/watch?v=rkXMauRTm1k
 - Follow the instructions in the video to set up the project in your AWS account.
 - Clone this repository to explore the project code and architecture.
   
