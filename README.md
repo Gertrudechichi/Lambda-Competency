@@ -35,4 +35,4 @@ Get Started
 - Watch the accompanying YouTube video for a step-by-step guide on deploying this solution: [link to YouTube video]
 - Follow the instructions in the video to set up the project in your AWS account.
 - Clone this repository to explore the project code and architecture.
-replace this with emojis
+  
